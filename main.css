@@ -14,7 +14,7 @@ input, button {
 	width: 10em;
 }
 
-#result-int {
+#result-roman {
 	padding: .2em;
 	background-color: red;
 }
