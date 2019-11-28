@@ -1,8 +1,21 @@
-document.getElementById("input-int").addEventListener("keyup", intToRoman);
-document.getElementById("input-int").addEventListener("click", intToRoman);
-var i = 0;
+var inputInt = document.getElementById("input-int");
+
+inputInt.addEventListener("click", intToRoman);
+inputInt.addEventListener("keyup", intToRoman);
+
+inputIntValue = inputInt.value;
+
 function intToRoman() {
-  i++;
+  var romanValue = "Ingresar un número entero válido";
   var resultRoman = document.getElementById("result-roman");
-  resultRoman.textContent = "Hola mundo " + i;
+  
+  actualInputIntValue = inputInt.value;
+  if (actualInputIntValue == inputIntValue) return;
+  
+  inputIntValue = actualInputIntValue;
+  if (inputIntValue >= 1 && inputIntValue <= 3999) {
+	 romanValue = inputIntValue;
+  }
+  
+  resultRoman.textContent = romanValue;
 }
