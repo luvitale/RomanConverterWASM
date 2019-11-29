@@ -10,13 +10,16 @@ body {
 	margin: 1em;
 }
 
-input, button {
+div {
+	margin: 1em auto;
+}
+
+input {
 	width: 10em;
 }
 
-#result-roman {
+span#result-roman {
 	padding: .2em;
-	background-color: red;
 }
 
 h4 {
